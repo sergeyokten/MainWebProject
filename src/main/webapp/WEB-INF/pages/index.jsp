@@ -12,12 +12,15 @@
 
 </form>
 <hr>
-<form action="pageNumber">
-    <input type="number" name="pageNumber">
-    <input type="submit">
-</form>
+<%--<form action="pageNumber">--%>
+    <%--<input type="number" name="pageNumber">--%>
+    <%--<input type="submit">--%>
+<%--</form>--%>
 <c:forEach items="${all}" var="user">
     <p>${user}</p>
 </c:forEach>
+
+<hr>
+<a href="chat"> chat page</a>
 
 <%@include file="templates/footer.jsp"%>

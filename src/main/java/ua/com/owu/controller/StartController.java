@@ -31,9 +31,12 @@ public class StartController {
     @GetMapping("/")
     public String index(Principal principal, Model model) {
         model.addAttribute("principal", principal);
-        logger.info("this is info log");
-        logger.error("this is error log");
         return "index";
+    }
+
+    @GetMapping("/chat")
+    public String chat(){
+        return "chat";
     }
 
     @GetMapping("pageNumber")
@@ -80,5 +83,7 @@ public class StartController {
 //        return "redirect:/login?logout";
         return "index";
     }
+
+
 
 }
